@@ -69,7 +69,7 @@ header {
     align-items: center;
     height: 100vh;
     width: 100%;
-    padding-top: 2em;
+    padding-top: 1em;
     background: #588c7e;
     color: #ffffff;
 }
@@ -79,7 +79,7 @@ h1 {
     font-weight: 700;
     font-size: 7em;
     letter-spacing: 0.03em;
-    margin: 0;
+    margin: 0.2em 0 0 0;
 }
 
 h2 {
