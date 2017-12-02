@@ -1,3 +1,9 @@
-$(window).on("scroll touchmove", function () {
+const headerScroll = 300;
+const navScroll = 350;
+
+$(window).on("scroll touchmove", () => {
     $("nav").toggleClass("nav-bar-collapsed", $(document).scrollTop() > 0);
+
+    $(".header-img").css("opacity", 1 - $(document).scrollTop() / headerScroll);
+    $(".nav-img").css("opacity", $(document).scrollTop() / navScroll);
 });
