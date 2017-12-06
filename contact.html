@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home - Ryan LaClair</title>
+    <title>Contact - Ryan LaClair</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/validate-contact.js"></script>
 </head>
 <body>
     <nav>
@@ -23,21 +24,21 @@
         <h2>Contact me!</h2>
     </header>
     <main>
-        <form name="contact" action="http://ryanlaclair.cs601.com/contact.php" method="post" onsubmit="">
+        <form name="contact" action="http://ryanlaclair.cs601.com/contact.php" method="post" onsubmit="return validateForm()">
             <p class="form-group">
-                <label for="firstName">First name</label>
-                <input type="text" id="firstName" name="firstName" required>
+                <label for="firstName">First name <i id="first-name-valid" class=""></i></label>
+                <input type="text" id="firstName" name="firstName">
             </p>
             <p class="form-group">
-                <label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="lastName" required>
+                <label for="lastName">Last name <i id="last-name-valid" class=""></i></label>
+                <input type="text" id="lastName" name="lastName">
             </p>
             <p class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email <i id="email-valid" class=""></i></label>
+                <input type="text" id="email" name="email">
             </p>
             <p class="form-group">
-                <label for="message">Message</label>
+                <label for="message">Message<i id="message-valid" class=""></i></label>
                 <textarea id="message" name="message"></textarea>
             </p>
             <p class="form-group button-group">
@@ -48,10 +49,10 @@
     </main>
     <footer>
         <ul class="nav-list">
-            <li class="nav-item"><a class="footer-link" href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-            <li class="nav-item"><a class="footer-link" href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-            <li class="nav-item"><a class="footer-link" href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            <li class="nav-item"><a class="footer-link" href="#"><i class="fa fa-github fa-lg"></i></a></li>
+            <li class="nav-item"><a class="footer-link" href="#"><i class="fa fa-facebook fa-lg fa-gray"></i></a></li>
+            <li class="nav-item"><a class="footer-link" href="#"><i class="fa fa-twitter fa-lg fa-gray"></i></a></li>
+            <li class="nav-item"><a class="footer-link" href="#"><i class="fa fa-linkedin fa-lg fa-gray"></i></a></li>
+            <li class="nav-item"><a class="footer-link" href="#"><i class="fa fa-github fa-lg fa-gray"></i></a></li>
         </ul>
         <p id="footer-copyright">&copy; All Rights Reserved</p>
     </footer>

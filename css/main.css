@@ -73,6 +73,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin-top: 2em;
 }
 
 footer {
@@ -82,6 +83,8 @@ footer {
 }
 
 label {
+    display: flex;
+    justify-content: space-between;
     font-weight: 700;
 }
 
@@ -133,7 +136,7 @@ button {
     outline: none;
 }
 
-button:hover {
+button:hover, button:focus {
     border: 1px solid #588c7e;
 }
 
@@ -183,7 +186,7 @@ button:active {
 }
 
 .form-group {
-    margin: 0.3em 0;
+    margin: 0.5em 0;
 }
 
 .button-group {
@@ -197,8 +200,16 @@ button:active {
     text-decoration: none;
 }
 
-.fa-lg {
+.fa-gray {
     color: #333333;
+}
+
+.fa-green {
+    color: #588c7e;
+}
+
+.fa-red {
+    color: #8c5858;
 }
 
 /* id */
