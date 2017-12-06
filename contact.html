@@ -14,25 +14,36 @@
         <img id="nav-img-contact" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
         <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
     </nav>
     <header id="header-contact">
-        <h1>Contact me!</h1>
+        <h2>Contact me!</h2>
     </header>
     <main>
         <form name="contact" action="http://ryanlaclair.cs601.com/contact.php" method="post" onsubmit="">
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <textarea id="message" name="message" placeholder="Message"></textarea>
-            <div class="button-group">
+            <p class="form-group">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </p>
+            <p class="form-group">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </p>
+            <p class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </p>
+            <p class="form-group button-group">
                 <button type="submit" id="submit">Submit</button>
                 <button type="reset" id="reset">Reset</button>
-            </div>      
+            </p>     
         </form>
     </main>
     <footer>

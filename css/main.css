@@ -1,7 +1,9 @@
 /* elements */
 body {
     font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
     margin: 0;
+    color: #333333;
 }
 
 h1 {
@@ -13,6 +15,14 @@ h1 {
 }
 
 h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 4em;
+    letter-spacing: 0.03em;
+    margin: 0.2em 0 0 0;
+}
+
+h3 {
     font-size: 1.5em;
     letter-spacing: 0.03em;
     margin: 0;
@@ -71,25 +81,64 @@ footer {
     align-items: center;
 }
 
-input {
-    width: 100%;
-    height: 2em;
-    border: 1px solid black;
-    outline: none;
+label {
+    font-weight: 700;
 }
 
-button {
+input {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    background: #eeeeee;
+    color: #333333;
     width: 100%;
-    height: 2em;
-    border: 1px solid black;;
+    height: 2.5em;
+    padding: 0.5em;
+    border: 1px solid #eeeeee;
     outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 1px solid #588c7e;
 }
 
 textarea {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    background: #eeeeee;
+    color: #333333;
     width: 100%;
     height: 10em;
-    border: 1px solid black;
+    padding: 0.5em;
+    border: 1px solid #eeeeee;
     outline: none;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    border: 1px solid #588c7e;
+}
+
+button {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    background: #dddddd;
+    color: #333333;
+    width: 48%;
+    height: 2.1em;
+    padding: 0.2em;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    outline: none;
+}
+
+button:hover {
+    border: 1px solid #588c7e;
+}
+
+button:active {
+    background: #588c7e;
 }
 
 /* classes */
@@ -133,13 +182,23 @@ textarea {
     transform: scaleX(1);
 }
 
+.form-group {
+    margin: 0.3em 0;
+}
+
 .button-group {
     display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
 }
 
 .footer-link {
     color: #000000;
     text-decoration: none;
+}
+
+.fa-lg {
+    color: #333333;
 }
 
 /* id */
@@ -158,7 +217,7 @@ textarea {
 }
 
 #header-contact {
-    height: 60vh;
+    height: 40vh;
 }
 
 #footer-copyright {
