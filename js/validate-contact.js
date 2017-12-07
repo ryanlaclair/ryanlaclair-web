@@ -93,7 +93,7 @@ function validateName(name) {
 }
 
 function validateEmail(email) {
-    var valid = email.value.includes("@");
+    var valid = (email.value.includes("@") && email.value.includes("."));
 
     if (valid) {
         $("#email-valid").removeClass().addClass("fa fa-check fa-green");
