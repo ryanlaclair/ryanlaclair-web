@@ -29,7 +29,7 @@ $(document).ready(() => {
 });
 
 // validate all of the form data
-function validateForm() {
+function validateContact() {
     var firstName = document.contact.firstName;
     var lastName = document.contact.lastName;
     var email = document.contact.email;
