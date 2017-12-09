@@ -33,8 +33,8 @@ function validateLogin(password) {
 function handleValidLogin(data) {
     $("main").empty();
 
-    $(".small-header").text("Your messages!");
-    $(".header-info").text("Don't forget to respond.");
+    $("h2").text("Your messages!");
+    $("h3").text("Don't forget to respond.");
     
     createMessageList(JSON.parse(data));
 }
