@@ -1,7 +1,7 @@
 $(document).ready(() => {
     var password = document.login.password;
 
-    $("#login").submit(() => {
+    $("#login").submit((event) => {
         event.preventDefault();
 
         if (validateLogin(password)) {
