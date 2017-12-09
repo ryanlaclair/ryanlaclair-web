@@ -27,7 +27,6 @@ nav {
 }
 
 ul {
-    display: flex;
     list-style-type: none;
     padding: 0;
 }
@@ -97,6 +96,10 @@ footer {
     background: rgba(37, 89, 75, 0.7);
 }
 
+.nav-list {
+    display: flex;
+}
+
 .nav-item {
     display: inline;
     padding: 0 1em;
@@ -146,7 +149,7 @@ footer {
 /* id */
 
 #nav-img-home {
-    padding: 1em 1.5em;
+    padding: 1em;
     opacity: 0;
 }
 
