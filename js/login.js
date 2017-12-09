@@ -52,7 +52,9 @@ function createMessageList(messages) {
 function addMessage(message) {
     var newMessage = $("<ul></ul>").addClass("message");
     
-    var name = $("<li></li>").addClass("message-name")
+    var name = $("<li></li>").addClass("message-name");
+
+    var nameHeading = $("<h4></h4>")
             .text(message.first_name + " " + message.last_name);
 
     var info = $("<li></li>").addClass("message-info");
@@ -68,5 +70,6 @@ function addMessage(message) {
     
     $("main").append(newMessage);
     newMessage.append(name, info, messageText);
+    name.append(nameHeading);
     info.append(email, timestamp);
 }

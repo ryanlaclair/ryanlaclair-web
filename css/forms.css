@@ -75,16 +75,13 @@ button:active {
 }
 
 .message {
-    list-style-type: none;
-    padding: 0;
     width: 50%;
     border: 1px solid #eeeeee;
 }
 
 .message-name {
-    padding: 1em 1em 0 1em;
+    padding: 1em 1em 0.4em 1em;
     background: #eeeeee;
-    font-weight: 700;
 }
 
 .message-info {

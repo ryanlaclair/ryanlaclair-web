@@ -8,7 +8,25 @@ article {
 
 /* class */
 
+.school {
+    margin-left: 4em;
+    border: 1px solid #eeeeee;
+}
+
+.school-name {
+    padding: 1em 1em 0.4em 1em;
+    background: #eeeeee;
+    font-weight: 700;
+}
+
+.school-degree {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em 1em 1em;
+    background: #eeeeee;
+    color: #888888;
+}
+
 .school-info {
-    margin-left: 4em; 
-    font-size: 
+    padding: 1em;
 }
