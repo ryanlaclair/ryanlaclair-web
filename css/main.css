@@ -6,28 +6,6 @@ body {
     color: #333333;
 }
 
-h1 {
-	font-family: 'PT Serif', serif;
-    font-weight: 700;
-    font-size: 7em;
-    letter-spacing: 0.03em;
-    margin: 0.2em 0 0 0;
-}
-
-h2 {
-    font-family: 'PT Serif', serif;
-    font-weight: 700;
-    font-size: 4em;
-    letter-spacing: 0.03em;
-    margin: 0.2em 0 0 0;
-}
-
-h3 {
-    font-size: 1.5em;
-    letter-spacing: 0.03em;
-    margin: 0;
-}
-
 img {
     border-radius: 50%;
 }
@@ -185,6 +163,28 @@ button:active {
     transform: scaleX(1);
 }
 
+.large-header {
+	font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 7em;
+    letter-spacing: 0.03em;
+    margin: 0.2em 0 0 0;
+}
+
+.small-header {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 4em;
+    letter-spacing: 0.03em;
+    margin: 0.2em 0 0 0;
+}
+
+.header-info {
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
 .form-group {
     margin: 0.5em 0;
 }
@@ -193,6 +193,31 @@ button:active {
     display: flex;
     justify-content: space-between;
     margin: 2em 0;
+}
+
+.message {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    border: 1px solid #eeeeee;
+}
+
+.message-name {
+    padding: 1em 1em 0 1em;
+    background: #eeeeee;
+    font-weight: 700;
+}
+
+.message-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em 1em 1em;
+    background: #eeeeee;
+    color: #888888;
+}
+
+.message-text {
+    padding: 1em;
 }
 
 .footer-link {
@@ -230,6 +255,10 @@ button:active {
 
 #header-contact {
     height: 40vh;
+}
+
+#login-form {
+    display: hidden;
 }
 
 #footer-copyright {

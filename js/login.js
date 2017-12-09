@@ -31,7 +31,12 @@ function validateLogin(password) {
 }
 
 function handleValidLogin(data) {
-    console.log(data);
+    $("main").empty();
+
+    $(".small-header").text("Your messages!");
+    $(".header-info").text("Don't forget to respond.");
+    
+    createMessageList(JSON.parse(data));
 }
 
 function handleFailedLogin() {
@@ -39,5 +44,29 @@ function handleFailedLogin() {
 }
 
 function createMessageList(messages) {
-    console.log(messages);
+    for (var i=0; i<messages.length; i++) {
+        addMessage(messages[i]);
+    }
+}
+
+function addMessage(message) {
+    var newMessage = $("<ul></ul>").addClass("message");
+    
+    var name = $("<li></li>").addClass("message-name")
+            .text(message.first_name + " " + message.last_name);
+
+    var info = $("<li></li>").addClass("message-info");
+
+    var email = $("<span></span>").addClass("message-email")
+            .text(message.email);
+
+    var timestamp = $("<span></span>").addClass("message-timestamp")
+            .text(message.timestamp);
+
+    var messageText = $("<li></li>").addClass("message-text")
+            .text(message.message);
+    
+    $("main").append(newMessage);
+    newMessage.append(name, info, messageText);
+    info.append(email, timestamp);
 }
