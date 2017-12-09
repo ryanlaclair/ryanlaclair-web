@@ -7,10 +7,6 @@ body {
     color: #333333;
 }
 
-img {
-    border-radius: 50%;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -150,11 +146,13 @@ footer {
 
 #nav-img-home {
     padding: 1em;
+    border-radius: 50%;
     opacity: 0;
 }
 
-#nav-img-contact {
+#nav-img {
     padding: 1em;
+    border-radius: 50%;
     opacity: 1;
     vertical-align: middle; 
 }
@@ -165,6 +163,10 @@ footer {
 
 #header-small {
     height: 40vh;
+}
+
+#header-img {
+    border-radius: 50%;
 }
 
 #footer-copyright {
