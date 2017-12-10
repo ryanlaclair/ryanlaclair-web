@@ -41,6 +41,7 @@ function validateContact() {
            validateMessage(message);
 }
 
+// validate a first name
 function validateFirstName(firstName) {
     var valid = validateName(firstName);
 
@@ -54,6 +55,7 @@ function validateFirstName(firstName) {
     return valid;
 }
 
+// validate a last name
 function validateLastName(lastName) {
     var valid = validateName(lastName);
 
@@ -92,6 +94,7 @@ function validateName(name) {
     return true;
 }
 
+// validate an email to ensure it contains both an "@" and a "."
 function validateEmail(email) {
     var valid = (email.value.includes("@") && email.value.includes("."));
 
@@ -105,6 +108,7 @@ function validateEmail(email) {
     return valid;
 }
 
+// validate to ensure the user entered a message
 function validateMessage(message) {
     var valid = message.value.length > 0;
 

@@ -94,6 +94,7 @@ footer {
 
 .nav-list {
     display: flex;
+    padding: 0 1.5em;
 }
 
 .nav-item {
@@ -145,7 +146,7 @@ footer {
 /* id */
 
 #nav-img-home {
-    padding: 1em;
+    padding: 1em 1.5em;
     border-radius: 50%;
     opacity: 0;
 }
