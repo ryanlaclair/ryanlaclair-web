@@ -56,7 +56,7 @@ function validateFirstName(firstName) {
         $("#first-name-error").remove();
         $("#first-name-icon").removeClass().addClass("fa fa-check fa-green");
     }
-    else {
+    else if (!$("#first-name-error").length) {
         $("#first-name-icon").removeClass().addClass("fa fa-times");
         
         var firstNameError = $("<span></span>").attr("id", "first-name-error")
@@ -77,7 +77,7 @@ function validateLastName(lastName) {
         $("#last-name-error").remove();
         $("#last-name-icon").removeClass().addClass("fa fa-check fa-green");
     }
-    else {
+    else if (!$("#last-name-error").length) {
         $("#last-name-icon").removeClass().addClass("fa fa-times fa-red");
 
         var lastNameError = $("<span></span>").attr("id", "last-name-error")
@@ -123,7 +123,7 @@ function validateEmail(email) {
         $("#email-error").remove();
         $("#email-icon").removeClass().addClass("fa fa-check fa-green");
     }
-    else {
+    else if (!$("#email-error").length) {
         $("#email-icon").removeClass().addClass("fa fa-times fa-red");
         
         var emailError = $("<span></span>").attr("id", "email-error")
@@ -144,7 +144,7 @@ function validateMessage(message) {
         $("#message-error").remove();
         $("#message-icon").removeClass().addClass("fa fa-check fa-green");
     }
-    else {
+    else if (!$("#message-error").length) {
         $("#message-icon").removeClass().addClass("fa fa-times fa-red");
 
         var messageError = $("<span></span>").attr("id", "message-error")
