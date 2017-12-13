@@ -20,6 +20,23 @@ $(document).ready(() => {
         validateMessage(message);
     });
 
+    $("#contact").submit((event) => {
+        event.preventDefault();
+        console.log("fadsf");
+
+        if (validateContact()) {
+            var jqxhr = $.post("php/contact.php", 
+                    { 
+                        firstName: document.contact.firstName.value,
+                        lastName: document.contact.lastName.value,
+                        email: document.contact.email.value,
+                        message: document.contact.message.value 
+                    })
+                    .done(handleValidContact)
+                    .fail(handleFailedContact);
+        }
+    });
+
     $("#reset").click(() => {
         $("#first-name-error").remove();
         $("#first-name-icon").removeClass();
@@ -42,21 +59,10 @@ function validateContact() {
     var email = document.contact.email;
     var message = document.contact.message;
 
-    var valid = validateFirstName(firstName) &&
+    return validateFirstName(firstName) &&
             validateLastName(lastName) &&
             validateEmail(email) &&
             validateMessage(message);
-
-    if (valid) {
-        $("main").empty();
-
-        var successMsg = $("<h4></h4>").attr("id", "success-msg")
-                .text("Thanks for the message!");
-
-        $("main").prepend(successMsg);
-    }
-
-    return valid;
 }
 
 // validate a first name
@@ -166,4 +172,20 @@ function validateMessage(message) {
     }
 
     return valid;
+}
+
+function handleValidContact() {
+    $("form").hide();
+    
+    var successMsg = $("<h4></h4>").text("Thanks for the message!");
+
+    $("main").prepend(successMsg);
+}
+
+function handleFailedContact() {
+    $("form").hide();
+    
+    var failureMsg = $("<h4></h4>").text("Contact failure, please try again");
+
+    $("main").prepend(failureMsg);
 }
