@@ -21,10 +21,17 @@ $(document).ready(() => {
     });
 
     $("#reset").click(() => {
-        $("#first-name-valid").removeClass();
-        $("#last-name-valid").removeClass();
-        $("#email-valid").removeClass();
-        $("#message-valid").removeClass();
+        $("#first-name-error").remove();
+        $("#first-name-icon").removeClass();
+
+        $("#last-name-error").remove();
+        $("#last-name-icon").removeClass();
+
+        $("#email-error").remove();
+        $("#email-icon").removeClass();
+
+        $("#message-error").remove();
+        $("#message-icon").removeClass();
     });
 });
 
@@ -46,10 +53,17 @@ function validateFirstName(firstName) {
     var valid = validateName(firstName);
 
     if (valid) {
-        $("#first-name-valid").removeClass().addClass("fa fa-check fa-green");
+        $("#first-name-error").remove();
+        $("#first-name-icon").removeClass().addClass("fa fa-check fa-green");
     }
     else {
-        $("#first-name-valid").removeClass().addClass("fa fa-times fa-red");
+        $("#first-name-icon").removeClass().addClass("fa fa-times");
+        
+        var firstNameError = $("<span></span>").attr("id", "first-name-error")
+                .text("First name must be 2 or more alpha characters");
+        
+        $("#first-name-valid").addClass("fa-red")
+                .prepend(firstNameError); 
     }
 
     return valid;
@@ -60,10 +74,17 @@ function validateLastName(lastName) {
     var valid = validateName(lastName);
 
     if (valid) {
-        $("#last-name-valid").removeClass().addClass("fa fa-check fa-green");
+        $("#last-name-error").remove();
+        $("#last-name-icon").removeClass().addClass("fa fa-check fa-green");
     }
     else {
-        $("#last-name-valid").removeClass().addClass("fa fa-times fa-red");
+        $("#last-name-icon").removeClass().addClass("fa fa-times fa-red");
+
+        var lastNameError = $("<span></span>").attr("id", "last-name-error")
+                .text("Last name must be 2 or more alpha characters");
+
+        $("#last-name-valid").addClass("fa-red")
+                .prepend(lastNameError);
     }
 
     return valid;
@@ -99,10 +120,17 @@ function validateEmail(email) {
     var valid = (email.value.includes("@") && email.value.includes("."));
 
     if (valid) {
-        $("#email-valid").removeClass().addClass("fa fa-check fa-green");
+        $("#email-error").remove();
+        $("#email-icon").removeClass().addClass("fa fa-check fa-green");
     }
     else {
-        $("#email-valid").removeClass().addClass("fa fa-times fa-red");
+        $("#email-icon").removeClass().addClass("fa fa-times fa-red");
+        
+        var emailError = $("<span></span>").attr("id", "email-error")
+                .text("Email must contain a domain");
+
+        $("#email-valid").addClass("fa-red")
+                .prepend(emailError);
     }
 
     return valid;
@@ -113,10 +141,17 @@ function validateMessage(message) {
     var valid = message.value.length > 0;
 
     if (valid) {
-        $("#message-valid").removeClass().addClass("fa fa-check fa-green");
+        $("#message-error").remove();
+        $("#message-icon").removeClass().addClass("fa fa-check fa-green");
     }
     else {
-        $("#message-valid").removeClass().addClass("fa fa-times fa-red");
+        $("#message-icon").removeClass().addClass("fa fa-times fa-red");
+
+        var messageError = $("<span></span>").attr("id", "message-error")
+                .text("Please enter a message");
+
+        $("#message-valid").addClass("fa-red")
+                .prepend(messageError);
     }
 
     return valid;
