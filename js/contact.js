@@ -42,10 +42,21 @@ function validateContact() {
     var email = document.contact.email;
     var message = document.contact.message;
 
-    return validateFirstName(firstName) &&
-           validateLastName(lastName) &&
-           validateEmail(email) &&
-           validateMessage(message);
+    var valid = validateFirstName(firstName) &&
+            validateLastName(lastName) &&
+            validateEmail(email) &&
+            validateMessage(message);
+
+    if (valid) {
+        $("main").empty();
+
+        var successMsg = $("<h4></h4>").attr("id", "success-msg")
+                .text("Thanks for the message!");
+
+        $("main").prepend(successMsg);
+    }
+
+    return valid;
 }
 
 // validate a first name

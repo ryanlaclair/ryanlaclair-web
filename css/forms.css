@@ -99,9 +99,3 @@ button:active {
 .message-text {
     padding: 1em;
 }
-
-/* id */
-
-#login-form {
-    display: hidden;
-}
