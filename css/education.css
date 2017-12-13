@@ -6,6 +6,10 @@ article {
     margin: 3em 0;
 }
 
+article > img {
+    min-width: 200px;
+}
+
 /* class */
 
 .school {

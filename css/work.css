@@ -1,0 +1,36 @@
+/* element */
+
+article {
+    display: flex;
+    width: 75%;
+    margin: 3em 0;
+}
+
+article > img {
+    min-width: 200px;
+}
+
+/* class */
+
+.job {
+    margin-left: 4em;
+    border: 1px solid #eeeeee;
+}
+
+.job-company-name {
+    padding: 1em 1em 0.4em 1em;
+    background: #eeeeee;
+    font-weight: 700;
+}
+
+.job-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em 1em 1em;
+    background: #eeeeee;
+    color: #888888;
+}
+
+.job-info {
+    padding: 1em;
+}
