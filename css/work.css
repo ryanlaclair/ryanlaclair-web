@@ -2,12 +2,14 @@
 
 article {
     display: flex;
+    align-items: center;
     width: 75%;
     margin: 3em 0;
 }
 
 article > img {
     min-width: 200px;
+    height: 100%;
 }
 
 /* class */
