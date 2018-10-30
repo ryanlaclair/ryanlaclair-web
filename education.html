@@ -16,67 +16,39 @@ title: Education
   {% include header.html topText="I went to school!" bottomText="Here's some things I learned." %}
 
   <main>
-    <article>
-      <img src="img/bu.png" alt="Boston University">
-      <ul class="school">
-        <li class="school-name">
-          <h4>Boston University</h4>
-        </li>
-        <li class="school-degree">
-          <span class="degree">M.S. Software Development</span>
-          <span class="year">Expected Graduation 2018</span>
-        </li>
-        <li class="school-info">
-          My employment at UTC Aerospace as a Sotware Engineer developing image processing software and algorithms
-          continued to get me further interested in software development.
-          That is why I decided it was time to return to school, and work on my M.S. in Software Development.
-          At BU, I am learning modern web application and mobile development technologies which I hope to be able to
-          put to use at UTC.
-        </li>
-      </ul>
-    </article>
-    <article>
-      <img src="img/rit.png" alt="Rochester Institute of Technology">
-      <ul class="school">
-        <li class="school-name">
-          <h4>Rochester Institute of Technology</h4>
-        </li>
-        <li class="school-degree">
-          <span class="degree">B.S. Imaging Science (Computer Science Minor)</span>
-          <span class="year">Graduated 2015</span>
-        </li>
-        <li class="school-info">
-          Imaging Science is the multidisciplinary combination of optics, imaging system engineering, solor science,
-          and image processing.
-          During my time at RIT, I focused my studies on image processing, and took a variety of Computer Science
-          classes to obtain a minor in CS.
-          I worked on campus as a teaching assistant for the freshman and sophomore Image Processing classes, and as a
-          reasearch assistant for the DIRS lab.
-          I won the John Wiley Jones Student in Science awar in Spring 2015, and graduated Magna Cum Laude with a GPA
-          of 3.70.
-        </li>
-      </ul>
-    </article>
-    <article>
-      <img src="img/mcc.png" alt="Monroe Community College">
-      <ul class="school">
-        <li class="school-name">
-          <h4>Monroe Community College</h4>
-        </li>
-        <li class="school-degree">
-          <span class="degree">A.S. Mathematics/Physics</span>
-          <span class="year">Graduated 2012</span>
-        </li>
-        <li class="school-info">
-          I completed many of my core requirements at MCC, including Math, Physics and English.
-          It was also at MCC that I was first introduced to computer programming, in a class called "Programming for
-          Engineers".
-          Looking back, this was quite a rudimentary class, but it sparked an interest that continued to grow
-          throughout the rest of my time in school.
-          I graduated with distinction, with a GPA of 3.87.
-        </li>
-      </ul>
-    </article>
+    {% include school.html
+    image="img/bu.png"
+    alt="Boston University"
+    schoolName="Boston University"
+    degree="M.S. Software Development"
+    year="Expected Graduation 2018"
+    schoolInfo="My employment at UTC Aerospace as a Sotware Engineer developing image processing software and
+    algorithms continued to get me further interested in software development. That is why I decided it was time to
+    return to school, and work on my M.S. in Software Development. At BU, I am learning modern web application and
+    mobile development technologies which I hope to be able to put to use at UTC." %}
+
+    {% include school.html
+    image="img/rit.png"
+    alt="Rochester Institute of Technology"
+    schoolName="Rochester Institute of Technology"
+    degree="B.S. Imaging Science (Computer Science Minor)"
+    year="Graduated 2015"
+    schoolInfo="Imaging Science is the multidisciplinary combination of optics, imaging system engineering, solor
+    science, and image processing. During my time at RIT, I focused my studies on image processing, and took a variety
+    of Computer Science classes to obtain a minor in CS. I worked on campus as a teaching assistant for the freshman
+    and sophomore Image Processing classes, and as a reasearch assistant for the DIRS lab. I won the John Wiley Jones
+    Student in Science awar in Spring 2015, and graduated Magna Cum Laude with a GPA of 3.70." %}
+
+    {% include school.html
+    image="img/mcc.png"
+    alt="Monroe Community College"
+    schoolName="Monroe Community College"
+    degree="A.S. Mathematics/Physics"
+    year="Graduated 2012"
+    schoolInfo="I completed many of my core requirements at MCC, including Math, Physics and English. It was also at
+    MCC that I was first introduced to computer programming, in a class called 'Programming for Engineers'. Looking
+    back, this was quite a rudimentary class, but it sparked an interest that continued to grow throughout the rest of
+    my time in school. I graduated with distinction, with a GPA of 3.87." %}
   </main>
 
   {% include footer.html %}
