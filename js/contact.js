@@ -24,15 +24,18 @@ $(document).ready(() => {
     event.preventDefault();
 
     if (validateContact()) {
-      var jqxhr = $.post(
-        'https://76h64qfzt9.execute-api.us-east-1.amazonaws.com/dev',
-        {
+      var jqxhr = $.ajax({
+        url: 'https://76h64qfzt9.execute-api.us-east-1.amazonaws.com/dev',
+        method: 'post',
+        contentType: 'application/json',
+        crossDomain: true,
+        data: JSON.stringify({
           firstName: document.contact.firstName.value,
           lastName: document.contact.lastName.value,
           email: document.contact.email.value,
           message: document.contact.message.value
-        }
-      )
+        })
+      })
         .done(handleValidContact)
         .fail(handleFailedContact);
     }
@@ -205,9 +208,10 @@ function handleValidContact() {
   $('main').prepend(successMsg);
 }
 
-function handleFailedContact() {
+function handleFailedContact(blah, bleh, error) {
   $('form').hide();
 
+  console.log(error);
   var failureMsg = $('<h4></h4>').text('Contact failure, please try again');
 
   $('main').prepend(failureMsg);
