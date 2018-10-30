@@ -1,101 +1,102 @@
 /* element */
 
 label {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
 }
 
 i {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 input {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
-    background: #eeeeee;
-    color: #333333;
-    width: 100%;
-    height: 2.5em;
-    padding: 0.5em;
-    border: 1px solid #eeeeee;
-    outline: none;
-    box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  background: #eeeeee;
+  color: #333333;
+  width: 100%;
+  height: 2.5em;
+  padding: 0.5em;
+  border: 1px solid #eeeeee;
+  outline: none;
+  box-sizing: border-box;
 }
 
 input:focus {
-    border: 1px solid #588c7e;
+  border: 1px solid #588c7e;
 }
 
 textarea {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
-    background: #eeeeee;
-    color: #333333;
-    width: 100%;
-    height: 10em;
-    padding: 0.5em;
-    border: 1px solid #eeeeee;
-    outline: none;
-    box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  background: #eeeeee;
+  color: #333333;
+  width: 100%;
+  height: 10em;
+  padding: 0.5em;
+  border: 1px solid #eeeeee;
+  outline: none;
+  box-sizing: border-box;
 }
 
 textarea:focus {
-    border: 1px solid #588c7e;
+  border: 1px solid #588c7e;
 }
 
 button {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    background: #dddddd;
-    color: #333333;
-    width: 48%;
-    height: 2.1em;
-    padding: 0.2em;
-    border: 1px solid #dddddd;
-    border-radius: 0;
-    outline: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  background: #dddddd;
+  color: #333333;
+  width: 48%;
+  height: 2.1em;
+  padding: 0.2em;
+  border: 1px solid #dddddd;
+  border-radius: 0;
+  outline: none;
 }
 
-button:hover, button:focus {
-    border: 1px solid #588c7e;
+button:hover,
+button:focus {
+  border: 1px solid #588c7e;
 }
 
 button:active {
-    background: #588c7e;
+  background: #588c7e;
 }
 
 /* class */
 
 .form-group {
-    margin: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 .button-group {
-    display: flex;
-    justify-content: space-between;
-    margin: 2em 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
 }
 
 .message {
-    width: 50%;
-    border: 1px solid #eeeeee;
+  width: 50%;
+  border: 1px solid #eeeeee;
 }
 
 .message-name {
-    padding: 1em 1em 0.4em 1em;
-    background: #eeeeee;
+  padding: 1em 1em 0.4em 1em;
+  background: #eeeeee;
 }
 
 .message-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1em 1em 1em;
-    background: #eeeeee;
-    color: #888888;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em 1em 1em;
+  background: #eeeeee;
+  color: #888888;
 }
 
 .message-text {
-    padding: 1em;
+  padding: 1em;
 }
