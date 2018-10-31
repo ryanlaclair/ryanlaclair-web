@@ -1,15 +1,15 @@
 <article>
-  <img src="{{ include.image }}" alt="{{ include.alt }}">
+  <img src="{{ job.image }}" alt="{{ job.alt }}">
   <ul class="job">
     <li class="job-company-name">
-      <h4>{{ include.companyName }}</h4>
+      <h4>{{ job.name }}</h4>
     </li>
     <li class="job-name">
-      <span class="name">{{ include.name }}</span>
-      <span class="year">{{ include.year }}</span>
+      <span class="name">{{ job.title }}</span>
+      <span class="year">{{ job.year }}</span>
     </li>
     <li class="job-info">
-      {{ include.jobInfo }}
+      {{ job.content }}
     </li>
   </ul>
 </article>
