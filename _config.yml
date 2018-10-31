@@ -3,3 +3,6 @@ description: >-
   Ryan LaClair site information
 baseurl: ''
 url: 'https://ryanlaclair.github.io'
+collections:
+  - schools
+  - jobs

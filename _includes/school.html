@@ -1,15 +1,15 @@
 <article>
-  <img src="{{ include.image }}" alt="{{ include.alt }}">
+  <img src="{{ school.image }}" alt="{{ school.alt }}">
   <ul class="school">
     <li class="school-name">
-      <h4>{{ include.schoolName }}</h4>
+      <h4>{{ school.name }}</h4>
     </li>
     <li class="school-degree">
-      <span class="degree">{{ include.degree }}</span>
-      <span class="year">{{ include.year }}</span>
+      <span class="degree">{{ school.degree }}</span>
+      <span class="year">{{ school.year }}</span>
     </li>
     <li class="school-info">
-      {{ include.schoolInfo }}
+      {{ school.content }}
     </li>
   </ul>
 </article>
