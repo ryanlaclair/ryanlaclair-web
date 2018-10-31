@@ -78,25 +78,3 @@ button:active {
 .validation-icon {
   padding-left: 1em;
 }
-
-.message {
-  width: 50%;
-  border: 1px solid #eeeeee;
-}
-
-.message-name {
-  padding: 1em 1em 0.4em 1em;
-  background: #eeeeee;
-}
-
-.message-info {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1em 1em 1em;
-  background: #eeeeee;
-  color: #888888;
-}
-
-.message-text {
-  padding: 1em;
-}
