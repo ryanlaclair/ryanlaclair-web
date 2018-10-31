@@ -4,6 +4,7 @@ image: img/mcc.png
 alt: Monroe Community College
 degree: A.S. Mathematics/Physics
 year: Graduated 2012
+order: 1
 ---
 
 I completed many of my core requirements at MCC, including Math, Physics and English.

@@ -19,7 +19,8 @@ headerBottom: Here's some things I learned.
 
   <main>
 
-    {% for school in site.schools %}
+    {% assign orderedSchools = site.schools | sort:"order" | reverse %}
+    {% for school in orderedSchools %}
     {% include school.html %}
     {% endfor %}
 

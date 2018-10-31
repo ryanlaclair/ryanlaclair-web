@@ -4,6 +4,7 @@ image: img/bu.png
 alt: Boston University
 degree: M.S. Software Development
 year: Expected Graduation 2018
+order: 3
 ---
 
 My employment at UTC Aerospace as a Sotware Engineer developing image processing software and algorithms continued to get me further interested in software development.

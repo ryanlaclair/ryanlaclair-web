@@ -4,6 +4,7 @@ image: img/rit.png
 alt: Rochester Institute of Technology
 degree: B.S. Imaging Science (Computer Science Minor)
 year: Graduated 2015
+order: 2
 ---
 
 Imaging Science is the multidisciplinary combination of optics, imaging system engineering, color science, and image processing.
