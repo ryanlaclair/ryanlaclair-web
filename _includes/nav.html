@@ -1,5 +1,10 @@
 <nav>
+  {% if page.title == "Home" %}
+  <img id="nav-img-home" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
+  {% else %}
   <img id="nav-img" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
+  {% endif %}
+
   <ul class="nav-list">
 
     {% if page.title == "Home" %}
