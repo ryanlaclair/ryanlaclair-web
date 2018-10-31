@@ -6,10 +6,6 @@ label {
   font-weight: 700;
 }
 
-i {
-  padding-left: 1em;
-}
-
 input {
   font-family: 'PT Sans', sans-serif;
   font-size: 1em;
@@ -77,6 +73,10 @@ button:active {
   display: flex;
   justify-content: space-between;
   margin: 2em 0;
+}
+
+.validation-icon {
+  padding-left: 1em;
 }
 
 .message {

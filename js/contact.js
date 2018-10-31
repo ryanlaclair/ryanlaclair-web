@@ -79,11 +79,11 @@ function validateFirstName(firstName) {
     $('#first-name-error').remove();
     $('#first-name-icon')
       .removeClass()
-      .addClass('fa fa-check fa-green');
+      .addClass('fa fa-check fa-green validation-icon');
   } else if (!$('#first-name-error').length) {
     $('#first-name-icon')
       .removeClass()
-      .addClass('fa fa-times');
+      .addClass('fa fa-times validation-icon');
 
     var firstNameError = $('<span></span>')
       .attr('id', 'first-name-error')
@@ -105,11 +105,11 @@ function validateLastName(lastName) {
     $('#last-name-error').remove();
     $('#last-name-icon')
       .removeClass()
-      .addClass('fa fa-check fa-green');
+      .addClass('fa fa-check fa-green validation-icon');
   } else if (!$('#last-name-error').length) {
     $('#last-name-icon')
       .removeClass()
-      .addClass('fa fa-times fa-red');
+      .addClass('fa fa-times fa-red validation-icon');
 
     var lastNameError = $('<span></span>')
       .attr('id', 'last-name-error')
@@ -156,11 +156,11 @@ function validateEmail(email) {
     $('#email-error').remove();
     $('#email-icon')
       .removeClass()
-      .addClass('fa fa-check fa-green');
+      .addClass('fa fa-check fa-green validation-icon');
   } else if (!$('#email-error').length) {
     $('#email-icon')
       .removeClass()
-      .addClass('fa fa-times fa-red');
+      .addClass('fa fa-times fa-red validation-icon');
 
     var emailError = $('<span></span>')
       .attr('id', 'email-error')
@@ -182,11 +182,11 @@ function validateMessage(message) {
     $('#message-error').remove();
     $('#message-icon')
       .removeClass()
-      .addClass('fa fa-check fa-green');
+      .addClass('fa fa-check fa-green validation-icon');
   } else if (!$('#message-error').length) {
     $('#message-icon')
       .removeClass()
-      .addClass('fa fa-times fa-red');
+      .addClass('fa fa-times fa-red validation-icon');
 
     var messageError = $('<span></span>')
       .attr('id', 'message-error')
