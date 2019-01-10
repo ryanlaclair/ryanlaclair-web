@@ -1,0 +1,19 @@
+.footer-list {
+  display: flex;
+  padding: 0 1.5em;
+}
+
+.footer-item {
+  display: inline;
+  padding: 0 1em;
+}
+
+.footer-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+#footer-copyright {
+  font-size: 0.7em;
+  margin-top: 0;
+}

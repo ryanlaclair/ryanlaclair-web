@@ -1,9 +1,6 @@
-/* element */
-
 article {
   display: flex;
   align-items: center;
-  width: 75%;
   margin: 3em 0;
 }
 
@@ -12,20 +9,18 @@ article > img {
   height: 100%;
 }
 
-/* class */
-
-.job {
+.card {
   margin-left: 4em;
   border: 1px solid #eeeeee;
 }
 
-.job-company-name {
+.card-title {
   padding: 1em 1em 0.4em 1em;
   background: #eeeeee;
   font-weight: 700;
 }
 
-.job-name {
+.card-info{
   display: flex;
   justify-content: space-between;
   padding: 0 1em 1em 1em;
@@ -33,6 +28,6 @@ article > img {
   color: #888888;
 }
 
-.job-info {
+.card-content {
   padding: 1em;
 }
