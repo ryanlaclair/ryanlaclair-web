@@ -64,3 +64,34 @@ nav {
   border-radius: 50%;
   opacity: 0;
 }
+
+#nav-responsive-button {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: start;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  #nav-responsive-button {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0.7em 1em 0.7em 0;
+  }
+
+  .responsive .nav-item {
+    display: block;
+    text-align: right;
+    margin: 1em 0 1em 0;
+  }
+}
