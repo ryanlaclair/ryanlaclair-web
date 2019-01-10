@@ -7,6 +7,10 @@ body {
   color: #333333;
 }
 
+article {
+  width: 70%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
