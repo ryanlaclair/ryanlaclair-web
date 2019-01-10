@@ -1,15 +1,15 @@
 <article>
   <img src="{{ school.image }}" alt="{{ school.alt }}">
-  <ul class="school">
-    <li class="school-name">
+  <div class="card">
+    <div class="card-title">
       <h4>{{ school.name }}</h4>
-    </li>
-    <li class="school-degree">
+    </div>
+    <div class="card-info">
       <span class="degree">{{ school.degree }}</span>
       <span class="year">{{ school.year }}</span>
-    </li>
-    <li class="school-info">
+    </div>
+    <div class="card-content">
       {{ school.content }}
-    </li>
-  </ul>
+    </div>
+  </div>
 </article>

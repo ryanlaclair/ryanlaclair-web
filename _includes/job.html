@@ -1,15 +1,15 @@
 <article>
   <img src="{{ job.image }}" alt="{{ job.alt }}">
-  <ul class="job">
-    <li class="job-company-name">
+  <div class="card">
+    <div class="card-title">
       <h4>{{ job.name }}</h4>
-    </li>
-    <li class="job-name">
-      <span class="name">{{ job.title }}</span>
-      <span class="year">{{ job.year }}</span>
-    </li>
-    <li class="job-info">
+    </div>
+    <div class="card-info">
+      <span>{{ job.title }}</span>
+      <span>{{ job.year }}</span>
+    </div>
+    <div class="card-content">
       {{ job.content }}
-    </li>
-  </ul>
+    </div>
+  </div>
 </article>
