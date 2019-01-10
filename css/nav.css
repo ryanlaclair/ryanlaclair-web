@@ -38,7 +38,7 @@ nav {
   content: '';
   position: absolute;
   width: 75%;
-  height: 2px;
+  height: 1px;
   bottom: -0.2em;
   left: 12.5%;
   background-color: #ffffff;
