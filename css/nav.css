@@ -70,11 +70,15 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  #nav-responsive-button {
+    display: block;
+  }
+
   .nav-item {
     display: none;
   }
 
-  #nav-responsive-button {
-    display: block;
+  .nav-list {
+    flex-direction: column;
   }
 }

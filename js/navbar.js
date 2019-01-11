@@ -11,5 +11,7 @@ $(document).ready(() => {
 
   $('#nav-responsive-button').on('click', (e) => {
     e.preventDefault();
+
+    $('.nav-item').toggle();
   });
 })
