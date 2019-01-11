@@ -1,15 +1,13 @@
-<nav id="nav">
+<nav>
   {% if page.title == "Home" %}
   <img id="nav-img-home" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
   {% else %}
   <img id="nav-img" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
   {% endif %}
 
-  <a href="" class="nav-item" id="nav-responsive-button">
-    <i class="fas fa-bars"></i>
-  </a>
-
   <ul class="nav-list">
+
+    <li><a href="" id="nav-responsive-button"><i class="fas fa-lg fa-bars"></i></a></li>
 
     {% if page.title == "Home" %}
     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>

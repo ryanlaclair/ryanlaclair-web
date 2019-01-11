@@ -11,14 +11,5 @@ $(document).ready(() => {
 
   $('#nav-responsive-button').on('click', (e) => {
     e.preventDefault();
-
-    let nav = document.getElementById("nav");
-
-    if (nav.className === "") {
-      nav.className = "responsive";
-    }
-    else {
-      nav.className = "";
-    }
   });
 })
