@@ -18,17 +18,12 @@ nav {
   background: rgba(37, 89, 75, 0.7);
 }
 
-.nav-list {
-  display: flex;
-  padding: 0 1.5em;
-}
-
 .nav-item {
   display: inline;
   padding: 0 1em;
 }
 
-a {
+.nav-link {
   position: relative;
   color: #ffffff;
   text-decoration: none;
@@ -65,8 +60,20 @@ a {
   opacity: 0;
 }
 
+#nav-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#nav-list {
+  display: flex;
+  padding: 0 1.5em;
+}
+
 #nav-responsive-button {
   display: none;
+  padding: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -74,11 +81,12 @@ a {
     display: block;
   }
 
-  .nav-item {
-    display: none;
+  #nav-group {
+    flex-direction: column;
   }
 
-  .nav-list {
+  #nav-list {
+    display: none;
     flex-direction: column;
   }
 }

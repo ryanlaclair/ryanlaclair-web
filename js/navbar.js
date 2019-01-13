@@ -12,6 +12,11 @@ $(document).ready(() => {
   $('#nav-responsive-button').on('click', (e) => {
     e.preventDefault();
 
-    $('.nav-item').toggle();
+    if ($('#nav-list').css('display') == 'none') {
+      $('#nav-list').css('display', 'flex');
+    }
+    else {
+      $('#nav-list').css('display', 'none');
+    }
   });
 })
