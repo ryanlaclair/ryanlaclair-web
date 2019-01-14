@@ -39,27 +39,19 @@
 
   <ul id="nav-list-responsive">
 
-    {% if page.title == "Home" %}
-    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-    {% else %}
+    {% if page.title != "Home" %}
     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
     {% endif %}
 
-    {% if page.title == "Education" %}
-    <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-    {% else %}
+    {% if page.title != "Education" %}
     <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
     {% endif %}
 
-    {% if page.title == "Work" %}
-    <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-    {% else %}
+    {% if page.title != "Work" %}
     <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
     {% endif %}
 
-    {% if page.title == "Contact" %}
-    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-    {% else %}
+    {% if page.title != "Contact" %}
     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     {% endif %}
 

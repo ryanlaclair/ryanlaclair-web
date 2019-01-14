@@ -53,13 +53,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 7em;
+  height: 5em;
   transition: height 0.5s;
 }
 
 #nav-bar.nav-bar-collapsed {
   height: 3em;
-  background: rgba(37, 89, 75, 0.7);
+  background: rgba(37, 89, 75, 0.95);
 }
 
 #nav-list {
@@ -71,6 +71,8 @@ a {
 
 #nav-list-responsive {
   display: none;
+  margin: 0;
+  background: rgba(37, 89, 75, 0.95);
 }
 
 #nav-responsive-button {
@@ -85,5 +87,9 @@ a {
 
   #nav-list {
     display: none;
+  }
+
+  .nav-item {
+    padding: 0.5em 1em;
   }
 }
