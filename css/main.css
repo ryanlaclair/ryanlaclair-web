@@ -20,7 +20,6 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 1em;
   background: #588c7e;
   color: #ffffff;
 }
@@ -85,11 +84,11 @@ footer {
 }
 
 #header-full {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #header-small {
-  height: 40vh;
+  min-height: 40vh;
 }
 
 #header-img {

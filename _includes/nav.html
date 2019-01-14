@@ -1,35 +1,60 @@
 <nav>
-  {% if page.title == "Home" %}
-  <img id="nav-img-home" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
-  {% else %}
-  <img id="nav-img" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
-  {% endif %}
-
-  <ul class="nav-list">
-
+  <div id="nav-bar">
     {% if page.title == "Home" %}
-    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <img id="nav-img-home" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
     {% else %}
+    <img id="nav-img" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
+    {% endif %}
+
+    <a id="nav-responsive-button" href=""><i class="fas fa-lg fa-bars"></i></a>
+
+    <ul id="nav-list">
+
+      {% if page.title == "Home" %}
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      {% else %}
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      {% endif %}
+
+      {% if page.title == "Education" %}
+      <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+      {% else %}
+      <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+      {% endif %}
+
+      {% if page.title == "Work" %}
+      <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+      {% else %}
+      <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+      {% endif %}
+
+      {% if page.title == "Contact" %}
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      {% else %}
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      {% endif %}
+
+    </ul>
+  </div>
+
+  <ul id="nav-list-responsive">
+
+    {% if page.title != "Home" %}
     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
     {% endif %}
 
-    {% if page.title == "Education" %}
-    <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-    {% else %}
+    {% if page.title != "Education" %}
     <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
     {% endif %}
 
-    {% if page.title == "Work" %}
-    <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-    {% else %}
+    {% if page.title != "Work" %}
     <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
     {% endif %}
 
-    {% if page.title == "Contact" %}
-    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-    {% else %}
+    {% if page.title != "Contact" %}
     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     {% endif %}
 
   </ul>
+
 </nav>
