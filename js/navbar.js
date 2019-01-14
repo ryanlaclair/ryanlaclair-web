@@ -12,15 +12,20 @@ $(document).ready(() => {
   $('#nav-responsive-button').on('click', (e) => {
     e.preventDefault();
 
-    if ($('#nav-list-responsive').css('display') == 'none') {
-      $('#nav-list-responsive').css({
-        'display': 'flex',
-        'flex-direction': 'column',
-        'align-items': 'flex-end'
-      });
-    }
-    else {
-      $('#nav-list-responsive').css('display', 'none');
-    }
+    $('nav').toggleClass('nav-bar-dark');
+    $('#nav-list-responsive').toggleClass('show');
+
+    // if ($('#nav-list-responsive').css('display') == 'none') {
+    //   $('#nav-list-responsive').css({
+    //     'display': 'flex',
+    //     'flex-direction': 'column',
+    //     'align-items': 'flex-end'
+    //   });
+    //   $('#nav-bar').css('background', 'rgba(37, 89, 75, 0.95)');
+    // }
+    // else {
+    //   $('#nav-list-responsive').css('display', 'none');
+    //   $('#nav-bar').css('background', 'none');
+    // }
   });
 })
