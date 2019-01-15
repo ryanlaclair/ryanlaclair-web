@@ -6,6 +6,7 @@ nav {
   text-transform: uppercase;
   z-index: 999;
   color: #ffffff;
+  background: rgba(37, 89, 75, 0.95);
 }
 
 a {
@@ -37,10 +38,6 @@ a {
   transform: scaleX(1);
 }
 
-.nav-bar-dark {
-  background: rgba(37, 89, 75, 0.95);
-}
-
 #nav-img {
   padding: 1em;
   border-radius: 50%;
@@ -63,7 +60,6 @@ a {
 
 #nav-bar.nav-bar-collapsed {
   height: 3em;
-  background: rgba(37, 89, 75, 0.95);
 }
 
 #nav-list {
@@ -74,8 +70,13 @@ a {
 }
 
 #nav-list-responsive {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
 }
 
 #nav-responsive-button {
@@ -97,8 +98,10 @@ a {
   }
 
   #nav-list-responsive.show {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    max-height: 10em;
+  }
+
+  .nav-link:hover:before {
+    visibility: hidden;
   }
 }

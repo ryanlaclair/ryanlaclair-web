@@ -12,7 +12,6 @@ $(document).ready(() => {
   $('#nav-responsive-button').on('click', (e) => {
     e.preventDefault();
 
-    $('nav').toggleClass('nav-bar-dark');
     $('#nav-list-responsive').toggleClass('show');
   });
 })
