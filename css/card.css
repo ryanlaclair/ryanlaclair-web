@@ -32,7 +32,7 @@ article > img {
   padding: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   article > img {
     min-width: 0;
     display: none;
@@ -41,7 +41,9 @@ article > img {
   .card {
     margin-left: 0;
   }
+}
 
+@media screen and (max-width: 600px) {
   .card-info {
     flex-direction: column;
   }
