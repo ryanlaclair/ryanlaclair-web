@@ -1,10 +1,12 @@
 <nav>
+
+  {% if page.title == "Home" %}
   <div id="nav-bar">
-    {% if page.title == "Home" %}
     <img id="nav-img-home" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
-    {% else %}
+  {% else %}
+  <div id="nav-bar" class="nav-bar-collapsed">
     <img id="nav-img" src="img/ryan-bitmoji-icon.jpg" alt="Ryan">
-    {% endif %}
+  {% endif %}
 
     <a id="nav-responsive-button" href=""><i class="fas fa-lg fa-bars"></i></a>
 
