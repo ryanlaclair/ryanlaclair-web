@@ -6,7 +6,7 @@ body {
 }
 
 article {
-  width: 70%;
+  width: 80%;
 }
 
 ul {
@@ -30,6 +30,7 @@ h1 {
   font-size: 7em;
   letter-spacing: 0.03em;
   margin: 0.2em 0 0 0;
+  text-align: center;
 }
 
 h2 {
@@ -38,12 +39,14 @@ h2 {
   font-size: 4em;
   letter-spacing: 0.03em;
   margin: 0.2em 0 0 0;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.5em;
   letter-spacing: 0.03em;
   margin: 0;
+  text-align: center;
 }
 
 h4 {

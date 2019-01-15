@@ -20,7 +20,7 @@ article > img {
   font-weight: 700;
 }
 
-.card-info{
+.card-info {
   display: flex;
   justify-content: space-between;
   padding: 0 1em 1em 1em;
@@ -30,4 +30,19 @@ article > img {
 
 .card-content {
   padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  article > img {
+    min-width: 0;
+    display: none;
+  }
+
+  .card {
+    margin-left: 0;
+  }
+
+  .card-info {
+    flex-direction: column;
+  }
 }
