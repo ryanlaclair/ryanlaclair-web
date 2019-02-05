@@ -9,6 +9,12 @@ article {
   width: 80%;
 }
 
+a {
+  position: relative;
+  color: #777777;
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   padding: 0;

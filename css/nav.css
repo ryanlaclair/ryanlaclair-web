@@ -9,10 +9,9 @@ nav {
   background: rgba(37, 89, 75, 0.95);
 }
 
-a {
+nav a {
   position: relative;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .nav-item {

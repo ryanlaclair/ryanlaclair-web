@@ -24,20 +24,26 @@ $(document).ready(() => {
     event.preventDefault();
 
     if (validateContact()) {
-      var jqxhr = $.ajax({
-        url: 'https://76h64qfzt9.execute-api.us-east-1.amazonaws.com/dev',
-        method: 'post',
-        contentType: 'application/json',
-        crossDomain: true,
-        data: JSON.stringify({
-          firstName: document.contact.firstName.value,
-          lastName: document.contact.lastName.value,
-          email: document.contact.email.value,
-          message: document.contact.message.value
-        })
-      })
-        .done(handleValidContact)
-        .fail(handleFailedContact);
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6LdWlHcUAAAAAPHyMCao2IBpkpWh2kYLVqH6xIp2', { action: 'contact' })
+          .then((token) => {
+            var jqxhr = $.ajax({
+              url: 'https://76h64qfzt9.execute-api.us-east-1.amazonaws.com/dev',
+              method: 'post',
+              contentType: 'application/json',
+              crossDomain: true,
+              data: JSON.stringify({
+                firstName: document.contact.firstName.value,
+                lastName: document.contact.lastName.value,
+                email: document.contact.email.value,
+                message: document.contact.message.value,
+                token: token
+              })
+            })
+              .done(handleValidContact)
+              .fail(handleFailedContact);
+          });
+      });
     }
   });
 
