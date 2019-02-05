@@ -81,3 +81,7 @@ button:active {
 .validation-icon {
   padding-left: 1em;
 }
+
+.grecaptcha-badge {
+  display: none;
+}
