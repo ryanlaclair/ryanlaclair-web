@@ -214,10 +214,9 @@ function handleValidContact() {
   $('main').prepend(successMsg);
 }
 
-function handleFailedContact(blah, bleh, error) {
+function handleFailedContact() {
   $('form').hide();
 
-  console.log(error);
   var failureMsg = $('<h4></h4>').text('Contact failure, please try again');
 
   $('main').prepend(failureMsg);
